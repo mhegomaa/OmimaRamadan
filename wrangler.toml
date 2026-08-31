@@ -1,4 +1,4 @@
-name = "omima-ramadan-landing"
+name = "omimaramadan"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 main = "./dist/_worker.js/index.js"
@@ -7,11 +7,7 @@ main = "./dist/_worker.js/index.js"
 directory = "./dist"
 binding = "ASSETS"
 
-# Create this KV namespace once with:
-#   npx wrangler kv namespace create LEADS
-# then paste the returned "id" below (and add a preview_id from
-# `npx wrangler kv namespace create LEADS --preview` for local dev).
 [[kv_namespaces]]
 binding = "LEADS"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
-preview_id = "REPLACE_WITH_YOUR_PREVIEW_KV_NAMESPACE_ID"
+id = "64d7dfca9968457baafbe8cace50eb78"
+preview_id = "c4bda00cb15d4185bef06c530e0316cf"
