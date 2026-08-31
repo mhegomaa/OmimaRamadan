@@ -1,0 +1,544 @@
+---
+const WHATSAPP_NUMBER = '201090422816';
+const WHATSAPP_TEXT_DEFAULT = 'أهلاً أستاذة أميمة، حابب/ة أعرف تفاصيل الدروس.';
+const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT_DEFAULT)}`;
+const CONTACT_EMAIL = 'omima@omimaramadan.com';
+
+const GOVERNORATES = ['أسيوط', 'سوهاج', 'أسوان', 'بني سويف', 'قنا', 'المنيا', 'القاهرة', 'محافظة أخرى'];
+const GRADES = ['الصف الأول الثانوي', 'الصف الثاني الثانوي', 'الصف الثالث الثانوي'];
+---
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أميمة رمضان | معلمة الأحياء للمرحلة الثانوية</title>
+  <meta name="description" content="دروس أحياء أونلاين وحضوري للمرحلة الثانوية مع الأستاذة أميمة رمضان — شرح مبني على الفهم، ومتابعة مباشرة لأسئلتكم." />
+  <meta name="theme-color" content="#0b121c" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:title" content="أميمة رمضان | معلمة الأحياء للمرحلة الثانوية" />
+  <meta property="og:description" content="دروس أحياء أونلاين وحضوري للمرحلة الثانوية — شرح مبني على الفهم." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <img class="brand-mark" src="/logo.png" alt="أميمة رمضان - معلمة الأحياء" />
+      <a class="btn btn-ghost btn-sm" href={WHATSAPP_LINK} target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17.6 6.3A8.4 8.4 0 0 0 4 16.4L3 21l4.7-1.2A8.4 8.4 0 1 0 17.6 6.3Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 9.6c0 3.6 2.9 6.4 6.4 6.4.5 0 .9-.5.7-1l-.6-1.3a.8.8 0 0 0-.9-.4l-1 .3a4.6 4.6 0 0 1-2.7-2.7l.3-1a.8.8 0 0 0-.4-.9L9.5 8.3c-.5-.2-1 .2-1 .7Z" fill="currentColor"/></svg>
+        واتساب
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">الأستاذة أميمة رمضان</p>
+        <h1 class="display">تفوّقي في الأحياء<br/>بفهم، مش بحفظ</h1>
+        <p class="lede">
+          دروس أحياء للمرحلة الثانوية، أونلاين وحضوري، بأسلوب بيشرح <em>ليه</em> قبل ما يشرح <em>إزاي</em> —
+          مع متابعة مباشرة لأسئلتكم بعد كل درس.
+        </p>
+        <div class="hero-actions">
+          <a href="#form" class="btn btn-primary btn-lg">احجزي مكانك الآن</a>
+          <a href={WHATSAPP_LINK} target="_blank" rel="noopener" class="btn btn-outline btn-lg">تواصل عبر واتساب</a>
+        </div>
+        <dl class="stats">
+          <div class="stat">
+            <dt>2.9K+</dt>
+            <dd>متابع على فيسبوك</dd>
+          </div>
+          <div class="stat">
+            <dt>6</dt>
+            <dd>محافظات + أونلاين</dd>
+          </div>
+          <div class="stat">
+            <dt>عربي / EN</dt>
+            <dd>لغة الشرح</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section">
+      <div class="wrap">
+        <p class="section-eyebrow">أسلوب المذاكرة</p>
+        <h2 class="section-title">مش مجرد شرح… دي طريقة مذاكرة كاملة</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="card-num">01</span>
+            <h3>شرح بالمنطق مش بالحفظ</h3>
+            <p>
+              مثلاً في موضوع الهرمونات، مش بس هتعرفي الاسم — هتفهمي ليه الهرمون الستيرويدي (زي الكورتيزول)
+              بيتكوّن من الكوليسترول مش من البروتين، وإزاي ده بيفرق في طريقة السؤال في الامتحان.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <h3>متابعة حقيقية لأسئلتكم</h3>
+            <p>
+              كل سؤال بييجي من الطلبة بياخد وقته ويتحل بالتفصيل — مش رسالة عامة، إجابة مخصوصة على السؤال اللي فعلاً محيّرك.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <h3>ملاحظات مركّزة للمراجعة</h3>
+            <p>
+              قبل كل امتحان، ملخصات ونقاط "لازم تتذكرها" — زي فرق اتجاه القراءة بين الـ mRNA والـ tRNA،
+              في صورة سهلة التذكر وقت الضغط.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAT -->
+    <section class="section section-alt">
+      <div class="wrap">
+        <p class="section-eyebrow">اختاري اللي يناسبك</p>
+        <h2 class="section-title">أونلاين من أي مكان، أو حضوري في محافظتك</h2>
+        <div class="format-grid">
+          <div class="format-card">
+            <h3>أونلاين</h3>
+            <p>لو بره أسيوط، سوهاج، أسوان، بني سويف، قنا أو المنيا — تقدري تحضري الدروس من أي مكان.</p>
+          </div>
+          <div class="format-card">
+            <h3>حضوري</h3>
+            <p>متاح في: أسيوط، سوهاج، أسوان، بني سويف، قنا، المنيا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section" id="form">
+      <div class="wrap form-wrap">
+        <p class="section-eyebrow">الخطوة الجاية</p>
+        <h2 class="section-title">سجّلي بياناتك، وهنكمل التفاصيل على واتساب</h2>
+        <p class="section-sub">بعد الإرسال هيفتحلك واتساب على طول عشان نأكد مكانك.</p>
+
+        <form id="lead-form" class="lead-form" novalidate>
+          <div class="field">
+            <label for="name">الاسم بالكامل</label>
+            <input id="name" name="name" type="text" required autocomplete="name" placeholder="مثال: منة محمد" />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">رقم موبايلك</label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="01xxxxxxxxx" />
+            </div>
+            <div class="field">
+              <label for="guardianPhone">رقم موبايل ولي الأمر <span class="optional">(اختياري)</span></label>
+              <input id="guardianPhone" name="guardianPhone" type="tel" autocomplete="tel" placeholder="01xxxxxxxxx" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="grade">الصف الدراسي</label>
+              <select id="grade" name="grade" required>
+                <option value="" disabled selected>اختاري الصف</option>
+                {GRADES.map((g) => <option value={g}>{g}</option>)}
+              </select>
+            </div>
+            <div class="field">
+              <label for="governorate">المحافظة</label>
+              <select id="governorate" name="governorate" required>
+                <option value="" disabled selected>اختاري المحافظة</option>
+                {GOVERNORATES.map((g) => <option value={g}>{g}</option>)}
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>نظام الدراسة</legend>
+            <div class="radio-row">
+              <label class="radio"><input type="radio" name="format" value="أونلاين" checked /> أونلاين</label>
+              <label class="radio"><input type="radio" name="format" value="حضوري" /> حضوري</label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            <span class="btn-label">إرسال والانضمام عبر واتساب</span>
+          </button>
+          <p id="form-error" class="form-error" role="alert" hidden></p>
+        </form>
+
+        <div id="form-success" class="form-success" hidden>
+          <h3>تم استلام بياناتك ✓</h3>
+          <p>دوسي على الزرار عشان تكملي التفاصيل مع الأستاذة أميمة مباشرة على واتساب.</p>
+          <a id="whatsapp-cta" class="btn btn-primary btn-lg" href={WHATSAPP_LINK} target="_blank" rel="noopener">فتح واتساب</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img class="brand-mark brand-mark-sm" src="/logo.png" alt="أميمة رمضان - معلمة الأحياء" />
+      <div class="footer-links">
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+        <a href={WHATSAPP_LINK} target="_blank" rel="noopener">واتساب</a>
+      </div>
+      <p class="footer-copy">© {new Date().getFullYear()} أميمة رمضان — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script define:vars={{ WHATSAPP_NUMBER }}>
+    const form = document.getElementById('lead-form');
+    const errorEl = document.getElementById('form-error');
+    const successEl = document.getElementById('form-success');
+    const whatsappCta = document.getElementById('whatsapp-cta');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      errorEl.hidden = true;
+
+      const data = Object.fromEntries(new FormData(form).entries());
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+
+      try {
+        const res = await fetch('/api/lead', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const result = await res.json();
+        if (!res.ok || !result.ok) throw new Error(result.error || 'submit_failed');
+
+        const text = `أهلاً أستاذة أميمة، اسمي ${data.name} (${data.grade || ''} - ${data.governorate || ''}) وحابب/ة أنضم لدروس الأحياء (${data.format || 'أونلاين'}).`;
+        whatsappCta.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
+        form.hidden = true;
+        successEl.hidden = false;
+        successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } catch (err) {
+        errorEl.textContent = 'حصلت مشكلة في الإرسال، حاولي تاني أو تواصلي معنا مباشرة على واتساب.';
+        errorEl.hidden = false;
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+<style>
+  :root {
+    --bg: #0b121c;
+    --bg-panel: #121b28;
+    --bg-panel-2: #17222f;
+    --ink: #eef3f1;
+    --muted: #9fb0c3;
+    --border: rgba(238, 243, 241, 0.1);
+    --accent: #35b686;
+    --accent-ink: #052015;
+    --accent-2: #f0a94e;
+    --accent-2-ink: #241300;
+    --radius: 14px;
+    --font-display: 'Aref Ruqaa', 'Traditional Arabic', serif;
+    --font-body: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  }
+
+  img { max-width: 100%; display: block; }
+
+  /* Topbar */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(11, 18, 28, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.75rem;
+  }
+  .brand-mark { height: 34px; width: auto; }
+  .brand-mark-sm { height: 40px; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+  }
+  .btn:focus-visible {
+    outline: 2px solid var(--accent-2);
+    outline-offset: 3px;
+  }
+  .btn-sm { padding: 0.45rem 1rem; font-size: 0.85rem; }
+  .btn-lg { padding: 0.85rem 1.75rem; font-size: 1rem; }
+  .btn-block { width: 100%; }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .btn-primary:hover { transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent;
+    border-color: var(--border);
+    color: var(--ink);
+  }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-ghost {
+    background: rgba(53, 182, 134, 0.12);
+    color: var(--accent);
+  }
+  .icon { width: 1rem; height: 1rem; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    padding-block: clamp(3rem, 8vw, 6rem) clamp(2.5rem, 6vw, 4rem);
+    overflow: clip;
+  }
+  .hero-glow {
+    position: absolute;
+    inset: -20% -10% auto -10%;
+    height: 60%;
+    background: radial-gradient(60% 60% at 30% 20%, rgba(53, 182, 134, 0.25), transparent 70%),
+                radial-gradient(50% 50% at 80% 10%, rgba(240, 169, 78, 0.16), transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; }
+  .eyebrow {
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.75rem;
+  }
+  .display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    line-height: 1.25;
+    margin: 0 0 1.25rem;
+    text-wrap: balance;
+  }
+  .lede {
+    max-width: 46ch;
+    color: var(--muted);
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    margin: 0 0 2rem;
+  }
+  .lede em { color: var(--ink); font-style: normal; font-weight: 600; }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 34rem;
+    margin: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+  .stat dt {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-2);
+    font-variant-numeric: tabular-nums;
+  }
+  .stat dd {
+    margin: 0.15rem 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  /* Sections */
+  .section { padding-block: clamp(3rem, 7vw, 5rem); }
+  .section-alt { background: var(--bg-panel); }
+  .section-eyebrow {
+    color: var(--accent-2);
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+    margin: 0 0 2.5rem;
+    max-width: 30ch;
+    text-wrap: balance;
+  }
+  .section-sub {
+    color: var(--muted);
+    margin-top: -1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+  }
+  .card-num {
+    display: inline-block;
+    font-family: var(--font-display);
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  .card h3 { margin: 0 0 0.6rem; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+  .format-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  .format-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+  }
+  .format-card h3 {
+    font-family: var(--font-display);
+    color: var(--accent);
+    font-size: 1.4rem;
+    margin: 0 0 0.6rem;
+  }
+  .format-card p { margin: 0; color: var(--muted); }
+
+  /* Form */
+  .form-wrap { max-width: 640px; }
+  .lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+  }
+  .field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .field-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
+  label, legend {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--muted);
+    padding: 0;
+  }
+  .optional { font-weight: 400; color: var(--muted); opacity: 0.7; }
+  input, select {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--ink);
+    background: var(--bg-panel-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+  }
+  input::placeholder { color: var(--muted); opacity: 0.6; }
+  input:focus-visible, select:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  fieldset { border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .radio-row { display: flex; gap: 1.5rem; }
+  .radio { display: flex; align-items: center; gap: 0.5rem; font-weight: 400; color: var(--ink); }
+  .radio input { width: auto; padding: 0; accent-color: var(--accent); }
+
+  .form-error { color: #ff9b8a; font-size: 0.9rem; margin: 0; }
+
+  .form-success {
+    text-align: center;
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: clamp(2rem, 5vw, 3rem);
+  }
+  .form-success h3 {
+    font-family: var(--font-display);
+    color: var(--accent);
+    font-size: 1.6rem;
+    margin: 0 0 0.75rem;
+  }
+  .form-success p { color: var(--muted); margin: 0 0 1.5rem; }
+
+  /* Footer */
+  .footer {
+    border-top: 1px solid var(--border);
+    padding-block: 2.5rem;
+  }
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+  .footer-links a:hover { color: var(--accent); }
+  .footer-copy { width: 100%; margin: 0; color: var(--muted); font-size: 0.8rem; opacity: 0.7; }
+</style>
